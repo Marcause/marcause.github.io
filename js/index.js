@@ -18,7 +18,7 @@ function salario_final() {
 
 
 function base_max(base, hijos) {
-    var base_real = base / 12;
+    var base_real = base / 12 * 0.7;
 
     switch (hijos) {
         case 0:
