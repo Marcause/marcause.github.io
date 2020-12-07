@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Calculadora ERTAL</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
     <script src="./js/index.js"></script>
 </head>
 
@@ -12,17 +13,17 @@
     <h1>Erte calculator!</h1>
 
     <div>
-        Introduce tu base de de cotización anual
+        <span class="right_align">Introduce tu base de de cotización anual</span>
         <input id="base" type="number" value="0"></input>
     </div>
 
     <div>
-        Introduce tu % de reducción de jornada (Normalmente del 100%)
+        <span class="right_align">Introduce tu % de reducción de jornada (Normalmente del 100%)</span>
         <input id="porcentaje" type="number" value="100"></input>
     </div>
 
     <div>
-        ¿Cuantos hijos tienes?
+        <span class="right_align">¿Cuantos hijos tienes?</span>
         <select id="hijos" name="hijos">
             <option value="0">0</option>
             <option value="1">1</option>
@@ -31,13 +32,14 @@
     </div>
 
     <div>
-        ¿En cuantas pagas se divide tu sueldo?
+        <span class="right_align">¿En cuantas pagas se divide tu sueldo?</span>
         <input id="pagas" type="number" value="12"></input>
     </div>
 
-    <div/> <button onclick="salario_final()">Calcular</button>
+    <div/> <button class="button" onclick="salario_final()"><span>Calcular</span></button>
 
-    <p id="mensaje">Haz click en el botón "Calcular" una vez introducidos los valores para concer el resultado. Recuerda que es una estimación, no se están teniendo en cuenta deducciones o retenciones como el IRPF</p>
+    <p id="mensaje">Haz click en el botón "Calcular" una vez introducidos los valores para concer el resultado.<br>
+        Recuerda que es una estimación, no se están teniendo en cuenta deducciones o retenciones como el IRPF.</p>
 
 </body>
 
